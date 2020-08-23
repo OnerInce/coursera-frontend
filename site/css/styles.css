@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+	position: relative;
+}
+
+div {
+	width:calc(33.33% - 20px);
+	float: left;
+	border: 1px solid black;
+	padding: 10px;
+	padding-top: 20px;
+	background-color: gray;
+	margin-right: 20px;
+}
+
+#p4, #p5, #p6 {
+	position: absolute;
+	top: -17px;
+  	right: -1px;
+	padding: 5px;
+	text-align: center;
+	width: 90px;
+	border: 1px solid black;
+}
+
+#p4 {
+	background-color: #A52A2A;
+}
+
+#p5 {
+	background-color: pink;
+}
+
+#p6 {
+	background-color: orange;
+}
+
+/************* Desktop ************/
+@media (min-width: 992px){
+	.box{
+		 width:calc(33.33% - 20px);
+	}
+}
+
+/************* Tablet ************/
+@media (min-width: 768px) and (max-width: 991px){
+	#p1, #p2{
+		width:calc(50% - 20px);
+	}
+	#p3{
+		width:calc(100% - 20px);
+	}
+}
+
+/************* Mobile ************/
+@media (max-width: 767px){
+	.box{
+		width: 100%;
+	}
+}

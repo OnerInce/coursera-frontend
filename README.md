@@ -1,1 +1,0 @@
-# jhopkins-js

@@ -1,64 +1,140 @@
-* {
-  box-sizing: border-box;
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
 }
 
-.box {
-	position: relative;
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
 }
 
-div {
-	width:calc(33.33% - 20px);
-	float: left;
-	border: 1px solid black;
-	padding: 10px;
-	padding-top: 20px;
-	background-color: gray;
-	margin-right: 20px;
-	margin-bottom: 20px;
+#logo-img{
+	background: url('../images/restaurant-logo_large.png') no-repeat; 
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
 }
 
-#p4, #p5, #p6 {
-	position: absolute;
-	top: -17px;
-  	right: -1px;
-	padding: 5px;
-	text-align: center;
-	width: 90px;
-	border: 1px solid black;
+a.navbar-brand {
+  padding-top: 25px;
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #222;
+  line-height: .75;
 }
 
-#p4 {
-	background-color: #A52A2A;
+.navbar-brand a:focus, .navbar-brand a:hover{
+	text-decoration: none;
 }
 
-#p5 {
-	background-color: pink;
+p.kosher {
+	text-transform: uppercase;
+	margin-top: 10px;
+	color: #000;
+	font-size: .7em;
 }
 
-#p6 {
-	background-color: orange;
+p.kosher span{
+	vertical-align: middle;
 }
 
-/************* Desktop ************/
-@media (min-width: 992px){
-	.box{
-		 width:calc(33.33% - 20px);
-	}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list > li {
+	margin-right: 15px;
 }
 
-/************* Tablet ************/
-@media (min-width: 768px) and (max-width: 991px){
-	#p1, #p2{
-		width:calc(50% - 20px);
-	}
-	#p3{
-		width:calc(100% - 20px);
-	}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
 }
 
-/************* Mobile ************/
-@media (max-width: 767px){
-	.box{
-		width: 100%;
-	}
+button.navbar-toggler{
+  clear: both;
+  margin-top: -70px;
+  margin-right: 0px;
 }
+li > a:hover, li > a:focus {
+  text-decoration: none;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #navbarNav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #navbarNav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+}
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 20px 20px 0px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+}
+
+

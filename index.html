@@ -1,27 +1,80 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/styles.css">
-<title>Assignment Solution for Module 2</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
 <body>
-<h1 align="center">Our Menu</h1>
-<div id="p1" class="box">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
-	<p id="p4">Chicken</p>
-</div>
+  <header>
+   <nav id="header-nav" class="navbar navbar-expand-md">
+    <div class="container">
+     <div class="header-nav">
+        <a href="index.html" class="float-left d-none d-md-block">
+          <div id="logo-img" alt="Logo"></div>
+        </a>
+        <a href="index.html" class="navbar-brand">David Chu's China Bistro</a>
+        <p class="kosher">
+          <img src="images/star-k-logo.png" alt="Kosher cert">
+          <span>Kosher Certified</span>
+        </p>
+      </div> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="bu" role="button" ><i class="fa fa-bars" aria-hidden="false" style="color:#61122f"></i></span>
+      </button>
+    </div> 
 
-<div id="p2" class="box">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
-	<p id="p5">Beef</p>
-</div>
+    <div id="navbarNav" class="collapse navbar-collapse">
+       <ul id="nav-list" class="nav navbar-nav navbar-right">
+        <li>
+          <a href="menu-categories.html">
+            <span class="material-icons">
+            restaurant_menu
+            </span><br class="d-none d-md-block"> Menu</a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-icons">
+              info
+            </span><br class="d-none d-md-block"> About</a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-icons">
+              emoji_events
+            </span><br class="d-none d-md-block"> Awards</a>
+        </li>
+        <li id="phone" class="d-none d-md-block">
+          <a href="tel:410-602-5008">
+            <span>410-602-5008</span></a><div>* We Deliver</div>
+        </li>
+      </ul>
 
-<div id="p3" class="box">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
-	<p id="p6">Sushi</p>
-</div>
+    </nav>
+  </header>
 
-</div>
+  <div id="call-btn" class="d-block d-md-none">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="material-icons">
+    call
+    </span>
+    410-602-5008
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center d-block d-md-none">* We Deliver</div>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
+

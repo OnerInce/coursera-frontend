@@ -6,16 +6,26 @@ body {
 
 /** HEADER **/
 #header-nav {
+  position: relative;
   background-color: gray;
+  height: 80px;
   
+}
+.header-nav {
+  position: absolute;
+  left: 20px;
 }
 .header-nav > a {
   color: black;
   font-weight: bolder;
   font-size: 1.6em;
 }
+.navbar-toggler {
+  position: absolute;
+  right: 20px;
+}
 .navbar-toggler:focus {
-    background-color: white;
+  background-color: white;
 }
 .bu {
   color: black;

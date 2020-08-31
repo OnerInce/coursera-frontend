@@ -1,0 +1,57 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Oxygen';
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  
+}
+.header-nav > a {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.6em;
+}
+.navbar-toggler:focus {
+    background-color: white;
+}
+.bu {
+  color: black;
+}
+#navbarNav {
+  background-color: white;
+}
+hr {
+  border-color: black;
+  border-width: 1.5px;
+  margin: 0;
+}
+#nav-list li {
+  text-align: center;
+}
+li > a {
+  color: black;
+}
+#main-content {
+  height: 1000px;
+}
+#title {
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.box-title {
+  padding-top: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+}
+.box {
+  margin-top: 20px;
+  background-color: gray;
+}
+.text {
+  padding: 10px;
+}

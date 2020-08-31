@@ -38,9 +38,6 @@ hr {
   border-width: 1.5px;
   margin: 0;
 }
-#nav-list li {
-  text-align: center;
-}
 li > a {
   color: black;
 }

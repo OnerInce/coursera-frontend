@@ -10,7 +10,7 @@ body {
   background-color: #f6b319;
 }
 
-#logo-img{
+#logo-img {
 	background: url('../images/restaurant-logo_large.png') no-repeat; 
 	width: 150px;
 	height: 150px;
@@ -29,7 +29,7 @@ a.navbar-brand {
   line-height: .75;
 }
 
-.navbar-brand a:focus, .navbar-brand a:hover{
+.navbar-brand a:focus, .navbar-brand a:hover {
 	text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ p.kosher {
 	font-size: .7em;
 }
 
-p.kosher span{
+p.kosher span {
 	vertical-align: middle;
 }
 
@@ -48,7 +48,7 @@ p.kosher span{
   margin-top: 10px;
 }
 #nav-list > li {
-	margin-right: 15px;
+  padding: 10px;
 }
 #nav-list a {
   color: #951C49;
@@ -73,7 +73,7 @@ p.kosher span{
   padding-right: 15px;
 }
 
-button.navbar-toggler{
+button.navbar-toggler {
   position: absolute;
   left: 85%;
   top: 17.5%;
@@ -81,24 +81,24 @@ button.navbar-toggler{
 .header-nav a:hover, .header-nav a:focus {
   text-decoration: none;
 }
-#navbarNav{
+#navbarNav {
   max-width:220px;
 }
 #nav-list {
     margin-top: 10px;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
 }
-#header-nav{
-  display:flex;
-  justify-content:flex-end;
+#header-nav {
+  display: flex;
+  justify-content: flex-end;
 }
 .container .jumbotron {
   box-shadow: 0 0 50px #3F0C1F;
   border: 2px solid #3F0C1F;
 }
 
-.card-footer{
+.card-footer {
 	margin-top: 30px;
 	padding-top: 35px;
 	padding-bottom: 30px;
@@ -119,14 +119,14 @@ button.navbar-toggler{
 	font-size: .8em;
 	line-height: 1.8;
 }
-#testimonials{
+#testimonials {
 	font-style: italic;
 }
-#testimonials p:nth-child(2){
+#testimonials p:nth-child(2) {
 	margin-top: 25px;
 }
 
-#menu-tile, #specials-tile, #map-tile{
+#menu-tile, #specials-tile, #map-tile {
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15px;
@@ -134,20 +134,20 @@ button.navbar-toggler{
 	border: 2px solid #3F0C1F;
 	overflow: hidden;
 }
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
 	box-shadow: 0 1px 5px 1px #cccccc;
 }
 
-#menu-tile{
+#menu-tile {
 	background: url('../images/menu-tile.jpg') no-repeat;
 	background-position: center; 
 }
-#specials-tile{
+#specials-tile {
 	background: url('../images/specials-tile.jpg') no-repeat;
 	background-position: center; 
 }
 
-#menu-tile span, #specials-tile span, #map-tile span{
+#menu-tile span, #specials-tile span, #map-tile span {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -160,7 +160,7 @@ button.navbar-toggler{
 	opacity: .8;
 }
 
-.category-tile{
+.category-tile {
 	position: relative;
 	border: 2px solid #3F0C1F;
 	overflow: hidden;
@@ -168,7 +168,7 @@ button.navbar-toggler{
 	height: 200px;
 	margin: 0 auto 15px;
 }
-.category-tile span{
+.category-tile span {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -180,23 +180,23 @@ button.navbar-toggler{
 	color: #fff;
 	opacity: .8;
 }
-.category-tile:hover{
+.category-tile:hover {
 	box-shadow: 0 1px 5px 1px #cccccc;
 }
-#menu-categories-title{
+#menu-categories-title {
 	margin-top: 20px;
 }
-#menu-categories-title + div{
+#menu-categories-title + div {
 	margin-bottom: 50px;
 }
-.active{
+.active {
 	background: rgb(119,136,153,0.6);
 }
 
-.menu-item-tile{
+.menu-item-tile {
 	margin-bottom: 25px;
 }
-.menu-item-tile hr{
+.menu-item-tile hr {
 	width: 80%;
 }
 .menu-item-tile .menu-item-price {
@@ -274,7 +274,7 @@ h3.menu-item-title {
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+    font-size: 5vw;
   }
   #navbarNav a { /* Collapsed nav menu text */
     font-size: 1.2em;
@@ -282,6 +282,12 @@ h3.menu-item-title {
   #navbarNav a span { /* Collapsed nav menu glyph */
     font-size: 1em;
     margin-right: 5px;
+  }
+  #navbarNav {
+    max-width: 100%;
+  }
+  #nav-list > li {
+    text-align: center;
   }
 
   #call-btn > a {
@@ -300,7 +306,7 @@ h3.menu-item-title {
     text-transform: uppercase;
   }
 
-   .container .jumbotron {
+  .container .jumbotron {
     margin-top: 30px;
     padding: 0;
   }
@@ -324,14 +330,14 @@ h3.menu-item-title {
   .menu-item-tile hr{
   	border-color: black;
   }
-  .menu-item-photo{
+  .menu-item-photo {
   	margin-right: auto;
   	margin-left: auto;
   }
-  .menu-item-tile .menu-item-price{
+  .menu-item-tile .menu-item-price {
   	text-align: center;
   }
-  .menu-item-description{
+  .menu-item-description {
   	text-align: center;
   }
 

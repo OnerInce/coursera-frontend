@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Chu's China Bistro</title>
+    <title>Oner Ince's China Bistro</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
@@ -22,21 +22,21 @@
         <a href="index.html" class="float-left d-none d-md-block">
           <div id="logo-img" alt="Logo"></div>
         </a>
-        <a href="index.html" class="navbar-brand">David Chu's China Bistro</a>
+        <a href="index.html" class="navbar-brand">Oner Ince's China Bistro</a>
         <p class="kosher">
           <img src="images/star-k-logo.png" alt="Kosher cert">
           <span>Kosher Certified</span>
         </p>
       </div> 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="bu" role="button" ><i class="fa fa-bars" aria-hidden="false" style="color:#61122f"></i></span>
+      <button id="navbarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="bu" role="butkton" ><i class="fa fa-bars" aria-hidden="false" style="color:#61122f"></i></span>
       </button>
     </div> 
 
     <div id="navbarNav" class="collapse navbar-collapse">
        <ul id="nav-list" class="nav navbar-nav navbar-right">
-        <li>
-          <a href="menu-categories.html">
+        <li id="navMenuButton">
+          <a href="#" onclick="$rt.loadMenuCategories();">
             <span class="material-icons">
             restaurant_menu
             </span><br class="d-none d-md-block"> Menu</a>
@@ -72,31 +72,7 @@
   </div>
   <div id="xs-deliver" class="text-center d-block d-md-none">* We Deliver</div>
 
-    <div id="main-content" class="container">
-    <div class="jumbotron">
-      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-fluid d-block d-md-none">
-    </div>
-
-    <div id="home-tiles" class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="menu-categories.html"><div id="menu-tile"><span>
-          menu
-        </span></div></a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html"><div id="specials-tile"><span>
-          specials
-        </span></div></a>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <a href="https://goo.gl/maps/gtXxdSGMrAXuAHej6" target="_blank"><div id="map-tile">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675063231722!2d-76.71387678430885!3d39.363594426933304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1str!2str!4v1598691513461!5m2!1str!2str" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          <span>
-          map
-        </span></div></a>
-      </div>
-    </div>
-  </div>
+  <div id="main-content" class="container"></div>
 
   <footer class="card-footer">
     <div class="container">
@@ -110,7 +86,7 @@
         </section>    
         <section id="address" class="col-sm-4">
           <span>Address:</span><br>
-          7105 Reisterstown Road<br>
+          06800 Beytepe Campus<br>
           <p>* Delivery area within 3-4 miles, with minimum order
           of $20 plus $3 charge for all deliveries.</p>
           <hr class="d-block .d-sm-none">
@@ -121,12 +97,13 @@
           <p>"Amazing food, great service. Highly recommended!"</p>
         </section> 
       </div>
-      <div class="text-center">&copy; Copyright Chu's China Bistro 2020</div>
+      <div class="text-center">&copy; Copyright Oner's China Bistro 2020</div>
     </div>
   </footer>
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

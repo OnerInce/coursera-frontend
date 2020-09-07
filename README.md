@@ -7,14 +7,16 @@
 
 ---
 
-This is the final project of the "HTML, CSS, and Javascript for Web Developers" course taught by Yaakov Chaikin on Coursera platform. It is a responsive website which is built from scratch using Bootsrap 4 and Javascript. 
+This is the final project of the "HTML, CSS, and Javascript for Web Developers" course taught by Yaakov Chaikin from Johns Hopkins University on Coursera platform. It is a single page design, responsive website which is built from scratch using Bootsrap 4 and Javascript. 
 
 ## 🎥 Screenshot <a name = "demo"></a>
 
 <h4>Desktop / Tablet</h4>
 <img height=700px src="images/desktop.png">
+<img height=700px src="images/menu-desktop.png">
 <h4>Mobile</h4>
 <img height=600px src="images/mobile.png">
+<img height=600px src="images/menu-mobile.png">
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 * [Bootstrap Documentation](https://getbootstrap.com/)
